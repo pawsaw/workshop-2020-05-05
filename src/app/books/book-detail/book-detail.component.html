@@ -1,0 +1,5 @@
+<ng-container *ngIf="book$ | async as book">
+  <p>Title: {{ book.title }}</p>
+  <p>ISBN: {{ book.isbn }}</p>
+  <p>abstract: {{ book.abstract }}</p>
+</ng-container>

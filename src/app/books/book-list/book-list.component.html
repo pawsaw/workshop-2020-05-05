@@ -1,0 +1,8 @@
+<ng-container *ngIf="books$ | async as books">
+  <ul>
+    <li *ngFor="let book of books">
+      {{ book.title }} - {{ book.subtitle }} - <a [routerLink]="['/books', book.isbn]">edit</a>
+    </li>
+  </ul>
+  <span> Buecher geladen: {{ books.length }} </span>
+</ng-container>
